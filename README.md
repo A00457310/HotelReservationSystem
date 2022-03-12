@@ -5,4 +5,4 @@ MySQL is used for data persistence.
 
 API documentation:
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/A00457310/HotelReservationSystem/blob/main/get_hotels.png)
