@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "a06614a4-660a-410e-b390-32c48a67f469",
+		"name": "HotelReservationSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Hotels",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/hotel/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hotel",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hotel Test 1\",\r\n    \"noOfRooms\": 100,\r\n    \"rating\": 4.4,\r\n    \"availability\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/hotel/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hotel",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"User 3\",\r\n    \"email\": \"xyz@abc.com\",\r\n    \"mobile\": \"+18768767001\",\r\n    \"password\": \"Pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/hotel/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hotel",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reserve room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 20,\r\n    \"hotelId\": 19,\r\n    \"noOfRoomsBooked\": 2,\r\n    \"checkInDate\": \"2022-03-12T01:08:48.470Z\",\r\n    \"checkOutDate\": \"2022-03-18T01:08:48.470Z\",\r\n    \"guests\": [\r\n        {\r\n            \"name\": \"ljkalkj\",\r\n            \"gender\": \"lajlkjs\",\r\n            \"email\": \"ljalkjalk\",\r\n            \"mobile\": \"ljalkjaklj\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/hotel/reserve",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hotel",
+						"reserve"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

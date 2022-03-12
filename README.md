@@ -1,7 +1,13 @@
 # HotelReservationSystem
-The API is built in Java Spring Boot.
-Maven is used as build tool.
-MySQL is used for data persistence.
+The API is built in Java Spring Boot.<br>
+Maven is used as build tool. <br>
+MySQL is used for data persistence. <br>
+
+Steps to run the project :
+1) Clone the project
+2) Run the main method or create a spring configuration to run the project.
+3) Postman collection is exported into the project directory. Please refer to HotelReservationSystem.postman_collection.json.
+4) Import the postman collection to Postman and run the apis.
 
 API documentation:
 1) Get Hotel list
