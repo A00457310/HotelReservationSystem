@@ -1,5 +1,6 @@
 package com.hotel.reservationSystem.dtos;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.hotel.reservationSystem.models.Guest;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +15,9 @@ public class ReserveHotelRoom {
     private Integer userId;
     private Integer hotelId;
     private Integer noOfRoomsBooked;
+//    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss")
     private Date checkInDate;
+//    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss")
     private Date checkOutDate;
     private List<Guest> guests = new ArrayList<>();
 

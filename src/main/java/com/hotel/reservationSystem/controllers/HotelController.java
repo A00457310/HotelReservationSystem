@@ -26,6 +26,7 @@ public class HotelController {
 
     @GetMapping("/")
     public ResponseEntity<MessageResponse> getHotels() {
+        System.out.println("asasasaaaaaa%%%%%%%%%");
         List<Hotel> hotels = hotelService.getHotels();
         return new ResponseEntity<>(new MessageResponse("Hotel List", hotels, true), HttpStatus.OK);
     }

@@ -14,6 +14,8 @@ public class Hotel implements Serializable {
     private Integer id;
 
     private String name;
+    private String price;
+    private String url;
     private Integer noOfRooms;
     private Float rating;
     private Boolean availability;
